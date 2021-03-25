@@ -47,6 +47,8 @@
   --primary-grey: lightslategrey;
   --primary-dark-grey: #666666;
   --primary-black: #000;
+  --primary-black: #000;
+  --primary-transparent-black: rgb(0, 0, 0, 0.7);
 }
 nav {
   z-index: 2;
@@ -389,7 +391,7 @@ nav ul li {
 
 .portfolio-image-box:hover .portfolio-icon {
   opacity: 70%;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -402,7 +404,7 @@ nav ul li {
 
 .hyper-link {
   cursor: pointer;
-  color: var(--primary-purple)
+  color: var(--primary-purple);
 }
 .hyper-link:hover {
   cursor: pointer;
@@ -410,27 +412,90 @@ nav ul li {
   text-decoration: none;
 }
 
-
 /*---------------------MEDIA---------------*/
 
-@media(max-width: 768px){
-  .portfolio-image-popup-box{
+@media (max-width: 768px) {
+  .portfolio-image-popup-box {
     width: 100%;
   }
 }
-@media(max-height: 570px){
+@media (max-height: 570px) {
   .popupbox-wrapper {
     height: 100% !important;
   }
-  .portfolio-image-popup-box{
+  .portfolio-image-popup-box {
     width: 50%;
   }
 }
-@media(max-height: 280px){
+@media (max-height: 280px) {
   .popupbox-wrapper {
     height: 90%;
   }
-  .portfolio-image-popup-box{
+  .portfolio-image-popup-box {
     width: 30%;
   }
+}
+/*---------------------TESTIMONIALS---------------*/
+
+.testimonials {
+  background-image: url(testimonials-bg.jpg);
+  background-size: cover;
+  background-color: var(--primary-black);
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.testimonials h1 {
+  color: var(--primary-purple);
+  padding: 3rem 0;
+  text-transform: uppercase;
+}
+
+.testimonials-content {
+  text-align: center;
+  max-width: 53.125rem;
+  margin: 0 auto 2rem auto;
+  background: var(--primary-transparent-black);
+}
+
+.myCarousel h3 {
+  color: var(--primary-purple);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.myCarousel p {
+  color: var(--primary-grey)
+}
+
+.myCarousel {
+  color: var(--primary-white);
+  background: transparent;
+  margin-top: -6%;
+  width: 54%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 17.875rem;
+}
+
+.carousel .slide img {
+  width: 10rem !important;
+  border-radius: 50%;
+}
+
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+.carousel .slide {
+  background: transparent !important;
+  height: 100% !important;
+  padding-top: 2rem;
 }
