@@ -18,7 +18,7 @@ function Services() {
       <div className="container">
         <div className="row">
           {/*  */}
-          <div className="col-md-3 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               {iconFunction(faReact)}
               <h3>React</h3>
@@ -26,7 +26,7 @@ function Services() {
             </div>
           </div>
           {/*  */}
-          <div className="col-md-3 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               {iconFunction(faDatabase)}
               <h3>MongoDB</h3>
@@ -34,7 +34,7 @@ function Services() {
             </div>
           </div>
           {/*  */}
-          <div className="col-md-3 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               {iconFunction(faPython)}
               <h3>Python</h3>
@@ -42,7 +42,7 @@ function Services() {
             </div>
           </div>
           {/*  */}
-          <div className="col-md-3 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               {iconFunction(faServer)}
               <h3>Django</h3>
