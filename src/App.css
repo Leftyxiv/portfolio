@@ -80,8 +80,8 @@ nav ul li {
   height: 4rem !important;
 }
 
-@media(max-width: 768px){
-  .navbar-brand{
+@media (max-width: 768px) {
+  .navbar-brand {
     width: 7rem;
   }
 }
@@ -188,8 +188,8 @@ nav ul li {
   text-transform: uppercase;
 }
 
-@media(max-width: 468px){
-  .profile-img{
+@media (max-width: 468px) {
+  .profile-img {
     width: 10rem;
   }
 }
@@ -203,5 +203,51 @@ nav ul li {
 }
 
 .services h1 {
-  color: var(--primary-dark)
+  color: var(--primary-dark);
+  text-transform: uppercase;
+}
+
+.services .circle {
+  position: relative;
+  margin: 0.374rem auto;
+  background-color: var(--primary-purple);
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.services .icon {
+  font-size: 1.4rem;
+  color: var(--primary-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services .box {
+  height: 16rem;
+  border-bottom: 0.3125rem solid var(--primary-purple);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: var(--primary-white);
+}
+
+.services .box:hover {
+  border-bottom: 0.3125rem solid var(--primary-dark);
+  background: var(--primary-purple);
+}
+
+.services .box:hover .icon {
+  color: var(--primary-dark);
+}
+
+.services .box:hover .circle {
+  background: var(--primary-white);
+}
+.services .box:hover p {
+  color: var(--primary-white);
+}
+.services .box:hover h3 {
+  color: var(--primary-white);
 }

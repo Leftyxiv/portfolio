@@ -3,6 +3,14 @@ import { faReact, faPython } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faServer } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
+const iconFunction = (iconName) => {
+  return (
+    <div className="circle">
+      <FontAwesomeIcon className="icon" icon={iconName} size="3x" />
+    </div>
+  );
+};
+
 function Services() {
   return (
     <div className="services">
@@ -12,9 +20,7 @@ function Services() {
           {/*  */}
           <div className="col-md-3 col-sm-6">
             <div className="box">
-              <i className="fab fa-react"></i>
-              <div className="circle"></div>
-              <FontAwesomeIcon icon={faReact} size="3x" />
+              {iconFunction(faReact)}
               <h3>React</h3>
               <p>Under construction!</p>
             </div>
@@ -22,8 +28,7 @@ function Services() {
           {/*  */}
           <div className="col-md-3 col-sm-6">
             <div className="box">
-              <div className="circle"></div>
-              <FontAwesomeIcon icon={faDatabase} size="3x" />
+              {iconFunction(faDatabase)}
               <h3>MongoDB</h3>
               <p>Under construction!</p>
             </div>
@@ -31,8 +36,7 @@ function Services() {
           {/*  */}
           <div className="col-md-3 col-sm-6">
             <div className="box">
-              <div className="circle"></div>
-              <FontAwesomeIcon icon={faPython} size="3x" />
+              {iconFunction(faPython)}
               <h3>Python</h3>
               <p>Under construction!</p>
             </div>
@@ -40,8 +44,7 @@ function Services() {
           {/*  */}
           <div className="col-md-3 col-sm-6">
             <div className="box">
-              <div className="circle"></div>
-              <FontAwesomeIcon icon={faServer} size="3x" />
+              {iconFunction(faServer)}
               <h3>Django</h3>
               <p>Under construction!</p>
             </div>
