@@ -467,7 +467,7 @@ nav ul li {
 }
 
 .myCarousel p {
-  color: var(--primary-grey)
+  color: var(--primary-grey);
 }
 
 .myCarousel {
@@ -498,4 +498,103 @@ nav ul li {
   background: transparent !important;
   height: 100% !important;
   padding-top: 2rem;
+}
+
+/*---------------------CONTACTS---------------*/
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-hover-purple);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+/*---------------------CONTACTS---------------*/
+.contacts input,
+.contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-hover-purple);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+  display: flex;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-hover-purple);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+  height: 12.25rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.contact-button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contactBtn {
+  width: 30%;
+}
+
+.line {
+  position: relative;
+  width: 0;
+  height: .125rem;
+  background: var(--primary-hover-purple);
+  display: inline-block;
+  top: -.8rem;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+/*--------------------MEDIA----------*/
+
+@media(max-width: 768px){
+  .contacts {
+    overflow-x: hidden;
+  }
+  .contacts .container{
+    padding: 0 1rem;
+  }
+  .contacts p {
+    padding: 0 .4rem;
+  }
 }
