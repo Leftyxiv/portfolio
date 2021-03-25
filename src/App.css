@@ -41,8 +41,11 @@
   --primary-white: #fff;
   --primary-purple: rebeccapurple;
   --primary-dark: rgb(255, 255, 255, 0);
-  --primary-red: #ef4035;
-  --primary-hover-red: #f33501;
+  /* --primary-purple: #8e10ad; */
+  --primary-hover-purple: #9650ac;
+}
+nav {
+  z-index: 2;
 }
 
 body {
@@ -68,16 +71,22 @@ nav ul li {
   margin-right: 0.075rem;
   margin-left: 0.075rem;
   color: var(--primary-white) !important;
-  border-top: .1875rem solid var(--primary-dark);
+  border-top: 0.1875rem solid var(--primary-dark);
 }
 
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 4rem !important;
-} 
+}
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+@media(max-width: 768px){
+  .navbar-brand{
+    width: 7rem;
+  }
+}
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-purple);
 }
 
@@ -89,7 +98,7 @@ nav ul li {
 
 .header-wrapper {
   position: relative;
-  background: url('wall-and-laptop-background.jpg') no-repeat;
+  background: url("wall-and-laptop-background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -107,6 +116,7 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
 }
 
 .main-info h1 {
@@ -114,6 +124,14 @@ nav ul li {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
 /* ---------- TYPEDTEXT ---------*/
 
 .typed-text {
@@ -122,10 +140,30 @@ nav ul li {
 }
 
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
+  border: 1px solid var(--primary-purple);
   text-transform: uppercase;
   border-radius: 0;
-  padding: .625rem .75rem .75rem .75rem;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-purple);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }
