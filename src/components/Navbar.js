@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div className="container">
         <Link smooth={true} to='' className="navbar-brand" href="#">
           <img src="./handi.png" className="logo" alt="logo" />
@@ -38,32 +38,32 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link smooth={true} to='home' className="nav-link" >
+              <Link offset={-100} smooth={true} to='home' className="nav-link" >
                 Home <span className="sr-only">(current)</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to='about' className="nav-link" >
+              <Link offset={-80} smooth={true} to='about' className="nav-link" >
                 About me
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to='services' className="nav-link" >
-                Services
+              <Link offset={-80} smooth={true} to='services' className="nav-link" >
+                Proficiencies
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to='experience' className="nav-link" >
+              <Link offset={-80} smooth={true} to='experience' className="nav-link" >
                 Experience
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to='portfolio' className="nav-link" >
+              <Link offset={-80} smooth={true} to='portfolio' className="nav-link" >
                 Portfolio
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to='contact'  className="nav-link" >
+              <Link offset={-80} smooth={true} to='contact'  className="nav-link" >
                 Contact
               </Link>
             </li>
