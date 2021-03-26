@@ -1,12 +1,13 @@
 import React from 'react'
 import Typed from 'react-typed'
+import { Link } from 'react-scroll'
 
 
 function Header() {
   return (
-    <div className="header-wrapper">
+    <div id='home' className="header-wrapper">
       <div className='main-info'>
-        <h1>Web development and website promotions</h1>
+        <h1>Web development and learning solutions</h1>
       <Typed 
       className='typed-text'
       strings= {[
@@ -16,7 +17,7 @@ function Header() {
       backSpeed={60}
       loop
       />
-      <a href='#' className='btn-main-offer'>Contact Me</a>
+      <Link to='contact' smooth={true} className='btn-main-offer'>Contact Me</Link>
       </div>
     </div>
   )

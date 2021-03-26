@@ -1,5 +1,6 @@
 import { faPray } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import { Link } from 'react-scroll'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -8,9 +9,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link smooth={true} to='' className="navbar-brand" href="#">
           <img src="./handi.png" className="logo" alt="logo" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -37,34 +38,34 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <Link smooth={true} to='home' className="nav-link" >
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link smooth={true} to='about' className="nav-link" >
                 About me
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link smooth={true} to='services' className="nav-link" >
                 Services
-              </a>
+              </Link>
             </li>
-            {/* <li className="nav-item">
-              <a className="nav-link" href="#">
-                Certification
-              </a>
-            </li> */}
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link smooth={true} to='experience' className="nav-link" >
+                Experience
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link smooth={true} to='portfolio' className="nav-link" >
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link smooth={true} to='contact'  className="nav-link" >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
