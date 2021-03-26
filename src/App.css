@@ -536,7 +536,6 @@ nav ul li {
 
 .contacts .container {
   padding: 4rem 0;
-  display: flex;
 }
 
 .contacts input:focus,
@@ -597,4 +596,15 @@ textarea.form-control {
   .contacts p {
     padding: 0 .4rem;
   }
+}
+/* ----------- CONTACT FORM ERROR MESSAGES --------*/
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-green);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: orchid;
 }
