@@ -1,0 +1,1 @@
+[{"id":"0n9pQAOkjovzfx9UhNLDk","type":"text","content":"# MannysBook\n\nMy own personal code sandbox!"},{"id":"5Z6SxJP5j3jVtZ7KC9Klk","type":"code","content":"const App = () => {\r\n  return <h1 style={{ color: 'rebeccapurple'}}>I'm rendering!</h1>\r\n}\r\n\r\nshow(<App />)"}]

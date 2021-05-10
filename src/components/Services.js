@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faPython } from "@fortawesome/free-brands-svg-icons";
+import { faReact, faPython, faJsSquare } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faServer } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
@@ -22,7 +22,7 @@ function Services() {
             <div className="box">
               {iconFunction(faReact)}
               <h3>React</h3>
-              <p>Under construction!</p>
+              <p></p>
             </div>
           </div>
           {/*  */}
@@ -30,7 +30,7 @@ function Services() {
             <div className="box">
               {iconFunction(faDatabase)}
               <h3>MongoDB</h3>
-              <p>Under construction!</p>
+              <p></p>
             </div>
           </div>
           {/*  */}
@@ -38,15 +38,15 @@ function Services() {
             <div className="box">
               {iconFunction(faPython)}
               <h3>Python</h3>
-              <p>Under construction!</p>
+              <p></p>
             </div>
           </div>
           {/*  */}
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
-              {iconFunction(faServer)}
-              <h3>Django</h3>
-              <p>Under construction!</p>
+              {iconFunction(faJsSquare)}
+              <h3>TypeScript/JS</h3>
+              <p></p>
             </div>
           </div>
           {/*  */}

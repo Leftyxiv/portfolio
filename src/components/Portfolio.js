@@ -32,11 +32,11 @@ function Portfolio() {
   const openPopupboxOnePer = () => {
     const content = (
       <>
-        <img className="portfolio-image-popup-box" src="/images/oneper.png" alt="natours-project" />
-        <p>Fully built out api!</p>
+        <img className="portfolio-image-popup-box" src="/images/faketwitter.png" alt="natours-project" />
+        <p>Replica twitter! Front end is react, back end is django!</p>
         <b>Github: </b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/Leftyxiv/onepercent")}>
-          One Percent on Github
+        <a className="hyper-link" onClick={() => window.open("https://github.com/Leftyxiv/reactdjangotwitterclone")}>
+          Twitter clone on GitHub!
         </a>
       </>
     );
@@ -67,11 +67,11 @@ function Portfolio() {
   const openPopupboxUC = () => {
     const content = (
       <>
-        <img className="portfolio-image-popup-box" src="/images/uc.png" alt="natours-project" />
-        <p>UNDER CONSTRUCTION</p>
+        <img className="portfolio-image-popup-box" src="/images/codesandbox.png" alt="natours-project" />
+        <p>Manny's Book - code sandbox and documentation tool</p>
         <b>Github: </b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/Leftyxiv/FIXME")}>
-          DEAD LINK UNDER CONSTRUCTION
+        <a className="hyper-link" onClick={() => window.open("https://github.com/Leftyxiv/mannysbook")}>
+          Manny's Book on GitHub
         </a>
       </>
     );
@@ -94,7 +94,7 @@ function Portfolio() {
           </div>
           {/*  */}
           <div className="portfolio-image-box" onClick={openPopupboxOnePer}>
-            <img className="portfolio-image" src="/images/oneper.png" alt="portfolio-project" />
+            <img className="portfolio-image" src="/images/faketwitter.png" alt="portfolio-project" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
@@ -106,7 +106,7 @@ function Portfolio() {
           </div>
           {/*  */}
           <div className="portfolio-image-box" onClick={openPopupboxUC}>
-            <img className="portfolio-image" src="/images/uc.png" alt="portfolio-project" />
+            <img className="portfolio-image" src="/images/codesandbox.png" alt="portfolio-project" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
